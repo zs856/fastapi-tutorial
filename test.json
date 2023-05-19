@@ -1,0 +1,12 @@
+{
+    "Type" : "SubscriptionConfirmation",
+    "MessageId" : "027ef360-d61a-4d2f-abbd-8740c178eec7",
+    "Token" : "2336412f37fb687f5d51e6e2425c464de0761e560f5581c93b4edff7d0c08ea598dc498469843a092a13d606f0cdd68b21dfede2fc43a75fdb463c3a0cd834c71959b6c18895b28a7f4bee27cbc642b65cef8a11f0a6fe62833d7ed0fc580e90346d30766b45069d4346df92c0bf54a20ab0039046b0d3cbdfc61a0e8d206063c670ada2b9f46af4d5f711b7b45c2a5160279b9f8e5785b438b6a1f9e71cdc42cc46fd76ba6f02ff529dd8cd70680996",
+    "TopicArn" : "arn:aws:sns:us-east-1:906013806264:FEADMessageDeliveryTopic-sp-traffic-ATVPDKIKX0DER-ENTITY2YVKFQWK21I2A",
+    "Message" : "You have chosen to subscribe to the topic arn:aws:sns:us-east-1:906013806264:FEADMessageDeliveryTopic-sp-traffic-ATVPDKIKX0DER-ENTITY2YVKFQWK21I2A.\nTo confirm the subscription, visit the SubscribeURL included in this message.",
+    "SubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:us-east-1:906013806264:FEADMessageDeliveryTopic-sp-traffic-ATVPDKIKX0DER-ENTITY2YVKFQWK21I2A&Token=2336412f37fb687f5d51e6e2425c464de0761e560f5581c93b4edff7d0c08ea598dc498469843a092a13d606f0cdd68b21dfede2fc43a75fdb463c3a0cd834c71959b6c18895b28a7f4bee27cbc642b65cef8a11f0a6fe62833d7ed0fc580e90346d30766b45069d4346df92c0bf54a20ab0039046b0d3cbdfc61a0e8d206063c670ada2b9f46af4d5f711b7b45c2a5160279b9f8e5785b438b6a1f9e71cdc42cc46fd76ba6f02ff529dd8cd70680996",
+    "Timestamp" : "2023-05-10T03:55:42.772Z",
+    "SignatureVersion" : "1",
+    "Signature" : "ewcPJo07RPfxIaZO5ePKTjgsYxuDhef5wzMWNFogM3dDQk+fALT8kKBHBXx94K6gZo7VFKPknG+JkyyERBURS27va3Fw+yE5Wufvc785IDLR3VVYnW8bYLxmkQYQVoeeOyRIjdWu8Q8+WzAhMAyvM3PTWsXkrJtOF1PJ/QtuQZmDhup48drd8gk938sAG0t4S3F7lj0vW2Phzf6WvhwdAPwh4OzelFmBW6aahTLiAXV0g4aEZPdkg+ZwMEJaTZeOHPKuRBQdhY1jm8qRTVwR+o3d7qGyXFf1GbcjeSjvckQqMEOlI+AJJ/+Qn0rRtL4p0NinQd//fTPtNn0vnjZS5A==",
+    "SigningCertURL" : "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-56e67fcb41f6fec09b0196692625d385.pem"
+  }
