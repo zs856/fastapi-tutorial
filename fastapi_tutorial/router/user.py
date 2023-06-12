@@ -1,12 +1,12 @@
 from typing import List
 from fastapi import APIRouter, Depends
-from schemas import UserBase
+from ..schemas import UserBase
 from sqlalchemy.orm import Session
 
-from db.database import get_db
-from db import db_user
-from schemas import UserDisplay
-from auth.oauth2 import get_current_user
+from ..db.database import get_db
+from ..db import db_user
+from ..schemas import UserDisplay
+from ..auth.oauth2 import get_current_user
 router= APIRouter(
     prefix='/user',
     tags=['user']

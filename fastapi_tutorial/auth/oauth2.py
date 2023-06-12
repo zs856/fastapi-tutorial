@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 from jose import jwt, JWTError
 from sqlalchemy.orm.session import Session
 from fastapi import HTTPException, status
-from db.database import get_db
-from db import db_user
+from ..db.database import get_db
+from ..db import db_user
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
  
 SECRET_KEY = '77407c7339a6c00544e51af1101c4abb4aea2a31157ca5f7dfd87da02a628107'

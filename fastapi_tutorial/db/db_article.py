@@ -1,9 +1,9 @@
 from fastapi import HTTPException, status
 
-from exception import StoryException
+from ..exception import StoryException
 from .models import DbArticle
 from sqlalchemy.orm.session import Session
-from schemas import ArticleBase
+from ..schemas import ArticleBase
 def create_article(db:Session, request: ArticleBase):
     if request.content.startswith('Once upon a time'):
         raise StoryException('No sotries please')
