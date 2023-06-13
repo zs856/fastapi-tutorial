@@ -379,6 +379,11 @@ uvicorn = {version = ">=0.12.0", extras = ["standard"], optional = true, markers
 [package.extras]
 all = ["email-validator (>=1.1.1)", "httpx (>=0.23.0)", "itsdangerous (>=1.1.0)", "jinja2 (>=2.11.2)", "orjson (>=3.2.1)", "python-multipart (>=0.0.5)", "pyyaml (>=5.3.1)", "ujson (>=4.0.1,!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0)", "uvicorn[standard] (>=0.12.0)"]
 
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tuna"
+
 [[package]]
 name = "greenlet"
 version = "2.0.2"
@@ -1002,6 +1007,11 @@ pluggy = ">=0.12,<2.0"
 [package.extras]
 testing = ["argcomplete", "attrs (>=19.2.0)", "hypothesis (>=3.56)", "mock", "nose", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
 
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tuna"
+
 [[package]]
 name = "python-dotenv"
 version = "1.0.0"
@@ -1399,6 +1409,11 @@ files = [
     {file = "ujson-5.8.0.tar.gz", hash = "sha256:78e318def4ade898a461b3d92a79f9441e7e0e4d2ad5419abed4336d702c7425"},
 ]
 
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tuna"
+
 [[package]]
 name = "urllib3"
 version = "2.0.3"
@@ -1631,4 +1646,4 @@ reference = "tuna"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "b681c79c7c7cc7d231e980a071f66c6e950f277355a786e5d1086ee52a534c94"
+content-hash = "25d2f9cfde3bc505817326703834ab1e8600ca3baa409bd56b6e707b6c20aa31"
