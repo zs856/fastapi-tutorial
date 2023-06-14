@@ -2,13 +2,13 @@
 name = "fastapi-tutorial"
 version = "0.1.0"
 description = ""
-authors = ["Ken <unknown@hitpointcloud.com>"]
+authors = ["Ken <unknown@unkown.com>"]
 readme = "README.md"
 packages = [{ include = "fastapi_tutorial" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = {extras = ["all"], version = "^0.97.0"}
+fastapi = { extras = ["all"], version = "^0.97.0" }
 uvicorn = "^0.22.0"
 sqlalchemy = "^2.0.13"
 passlib = "^1.7.4"
