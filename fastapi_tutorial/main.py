@@ -9,6 +9,7 @@ from .router import user
 from .router import article
 from .router import product
 from .router import file
+from .router import dependencies
 from .db import models
 from .db.database import engine
 from fastapi.responses import JSONResponse
@@ -18,6 +19,7 @@ from fastapi.staticfiles import StaticFiles
 from .templates import templates
 from .client import html
 from starlette.responses import HTMLResponse
+from fastapi.websockets import WebSocket
 app = FastAPI(debug=True)
 app.include_router(blog_get.router)
 app.include_router(blog_post.router)
@@ -27,6 +29,7 @@ app.include_router(product.router)
 app.include_router(authentication.router)
 app.include_router(file.router)
 app.include_router(templates.router)
+app.include_router(dependencies.router)
 @app.get("/hello")
 def index():
     return {"message": "Hello World"}
@@ -60,3 +63,12 @@ async def add_middleware(request: Request, call_next):
 @app.get("/")
 async def get():
     return HTMLResponse(html)
+clients=[]
+@app.websocket("/chat")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    clients.append(websocket)
+    while True:
+        data = await websocket.receive_text()
+        for client in clients:
+            await client.send_text(data)
