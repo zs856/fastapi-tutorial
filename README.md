@@ -10,3 +10,9 @@ poetry install
 ```
 uvicorn --reload fastapi_tutorial.main:app
 ```
+
+# 真正重要的点
+进入fastapi的文档页面，请使用以下url
+```
+http://127.0.0.1:8000/docs
+```
